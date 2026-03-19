@@ -9,6 +9,8 @@ import { EnterpriseSection } from "@/components/enterprise-section"
 import { PricingSection } from "@/components/pricing-section"
 import { CTASection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
+import { MetricsSection } from "@/components/metrics-section"
+import { FAQSection } from "@/components/faq-section"
 
 export default function HomePage() {
   return (
@@ -19,6 +21,7 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
+        <MetricsSection />
         <FeaturesSection />
         <UseCasesSection />
         <SolutionsSection />
@@ -26,6 +29,7 @@ export default function HomePage() {
         <TestimonialsSection />
         <EnterpriseSection />
         <PricingSection />
+        <FAQSection />
         <CTASection />
       </main>
       <Footer />
