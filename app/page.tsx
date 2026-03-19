@@ -12,18 +12,23 @@ import { Footer } from "@/components/footer"
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-background">
+    <div className="relative min-h-screen bg-background">
+      {/* Subtle noise texture overlay for depth */}
+      <div className="noise" aria-hidden="true" />
+      
       <Header />
-      <HeroSection />
-      <FeaturesSection />
-      <UseCasesSection />
-      <SolutionsSection />
-      <IntegrationsSection />
-      <TestimonialsSection />
-      <EnterpriseSection />
-      <PricingSection />
-      <CTASection />
+      <main>
+        <HeroSection />
+        <FeaturesSection />
+        <UseCasesSection />
+        <SolutionsSection />
+        <IntegrationsSection />
+        <TestimonialsSection />
+        <EnterpriseSection />
+        <PricingSection />
+        <CTASection />
+      </main>
       <Footer />
-    </main>
+    </div>
   )
 }
